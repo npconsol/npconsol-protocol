@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="NPC on Solana. A live tape of the busiest Solana names, a strict register of what is known, and a console that matches addresses against it.">
+<title>NPC | step out of the script</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<div class="progress" data-progress aria-hidden="true"></div>
+
+<header class="wrap topbar">
+  <a class="brand" href="#top" aria-label="NPC home">
+    <img class="brand-logo" src="assets/logo-192.png" width="40" height="40" alt="">
+    <span>NPC</span>
+    <span class="brand-label">SOLANA CONSOLE</span>
+  </a>
+  <nav class="nav" aria-label="Main navigation">
+    <a class="nav-link" href="#market">Tape</a>
+    <a class="nav-link" href="#register">Register</a>
+    <a class="nav-cta" href="#console">Console <span aria-hidden="true">↗</span></a>
+    <span class="socials">
+      <span class="social is-inert" data-social="x" role="img" aria-label="X, pending"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.4l7.1-8.2L.8 2h6.5l4.5 6.8L18.9 2Zm-1.1 18h1.7L6.4 3.9H4.6L17.8 20Z"/></svg></span>
+      <span class="social is-inert" data-social="github" role="img" aria-label="GitHub, pending"><svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg></span>
+    </span>
+  </nav>
+</header>
+
+<section class="wrap ca-band spot" data-ca-slot data-scan-exempt aria-label="Contract address">
+  <div class="ca-label"><i class="dot" aria-hidden="true"></i><span>CONTRACT ADDRESS</span></div>
+  <code class="ca-value is-inert" data-ca-value>pending</code>
+  <button class="button ca-copy" type="button" data-ca-copy disabled>Copy</button>
+</section>
+
+<main id="top">
+  <div class="hero-wrap" data-parallax>
+    <div class="hero-mesh" aria-hidden="true">
+      <i class="blob b1" data-depth="0.4"></i><i class="blob b2" data-depth="0.7"></i><i class="blob b3" data-depth="0.25"></i>
+    </div>
+    <div class="wrap hero">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="pill" data-market-pill data-state="loading"><i class="dot live" aria-hidden="true"></i><span data-pill-text>Syncing</span></span>
+          <span>Solana · open tape</span>
+        </div>
+        <h1 data-reveal>Step out of<br><em>the script.</em></h1>
+        <p class="lead" data-reveal>NPC lives on Solana, and its contract address has not been named yet. Until it is, this page watches the busiest names on the chain, keeps a strict ledger of what is known, and declines to guess.</p>
+        <div class="hero-actions" data-reveal>
+          <a class="button" href="#market">Watch the tape <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="#console">Open console <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#register">Read the register <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="chain-card spot" data-reveal>
+          <div class="chain-head"><i class="dot" aria-hidden="true"></i><span>Network</span></div>
+          <strong class="chain-name" data-chain-name>—</strong>
+          <p data-chain-note>Stated by the client for this batch.</p>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg class="orbits" viewBox="0 0 520 520" fill="none" data-depth="0.5"><ellipse cx="260" cy="260" rx="250" ry="120" transform="rotate(-18 260 260)"/><ellipse cx="260" cy="260" rx="215" ry="96" transform="rotate(-18 260 260)" class="thin"/><circle cx="62" cy="330" r="4" class="spark"/><circle cx="462" cy="182" r="4" class="spark"/></svg>
+        <div class="logo-ring" data-depth="0.15"></div>
+        <img class="hero-logo" src="assets/logo-512.png" width="512" height="512" alt="" data-depth="0.9" fetchpriority="high">
+        <div class="art-caption">BUILT FOR THE QUIET ONES.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap status-band" aria-label="Market snapshot">
+    <div class="status-cell spot" data-reveal><div class="metric-label">Volume · top ten</div><div class="hashline"><span class="hash" data-stat-volume>—</span><span class="unit">USD / 24h</span></div><div class="preview">Summed across the rows below.</div></div>
+    <div class="status-cell spot" data-reveal><div class="metric-label">Names in view</div><strong class="status-value" data-stat-count>—</strong><div class="preview">Solana only, one row per token.</div></div>
+    <div class="status-cell spot" data-reveal><div class="status-top"><div class="metric-label">Contract gate</div><span class="live-tag" data-ca-badge>PENDING</span></div><strong class="status-value" data-ca-state>Waiting</strong><div class="preview">Market rows ignore this gate.</div></div>
+  </div>
+
+  <div class="ticker" aria-label="Live price strip">
+    <div class="ticker-mask"><div class="ticker-track" data-ticker-track></div></div>
+  </div>
+
+  <section class="wrap" id="market">
+    <div class="section-head">
+      <div><div class="section-kicker">01 / Live tape</div><h2 data-reveal>Ten names<br>moving the most.</h2></div>
+      <p class="section-intro" data-reveal>Solana pairs ranked by trailing-day volume. The list renews every minute and rests while this tab is out of sight.</p>
+    </div>
+    <div class="market-box" data-reveal>
+      <div class="command-top">
+        <div><h3>Busiest on Solana</h3><p>Public DEX feed · ranked by volume</p></div>
+        <span class="pill" data-market-pill data-state="loading"><i class="dot live" aria-hidden="true"></i><span data-pill-text>Syncing</span></span>
+      </div>
+      <div class="mhead" aria-hidden="true"><span>#</span><span>Token</span><span>Price</span><span>24h</span><span>Volume</span><span>Liquidity</span><span></span></div>
+      <ol class="market-list" data-market-list aria-label="Top ten Solana tokens by volume"></ol>
+      <p class="market-note" data-market-note role="status"></p>
+    </div>
+  </section>
+
+  <section class="wrap" id="console">
+    <div class="section-head">
+      <div><div class="section-kicker">02 / Console</div><h2 data-reveal>Check before<br>you click.</h2></div>
+      <p class="section-intro" data-reveal>Paste any address. It is compared with the register and nothing else. A 0x string is judged by the same rule as a base58 one.</p>
+    </div>
+    <div class="console-box spot" data-reveal data-scan-exempt>
+      <div class="command-top">
+        <div><h3><img class="mini-logo" src="assets/logo-192.png" width="20" height="20" alt="">Address console</h3><p>Solana · register match</p></div>
+        <span class="target-tag">NO GUESSING · NO TRUST BY SHAPE</span>
+      </div>
+      <div class="workbench">
+        <div class="console-inputs">
+          <label for="addrInput">Address to test</label>
+          <input id="addrInput" type="text" placeholder="Paste a Solana or 0x address" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="addrHelp">
+          <p class="miner-disclosure" id="addrHelp">Nothing leaves your browser. The text is matched locally against stated register records.</p>
+          <div class="verdict" data-verdict data-kind="empty" role="status" aria-live="polite"><strong>Waiting for input.</strong><span>Paste something to see how the register reads it.</span></div>
+          <div class="console-controls"><button class="button" type="button" data-addr-clear>Clear</button></div>
+        </div>
+        <aside class="gate-panel" aria-label="Gate summary">
+          <div class="session-heading"><span>Gate summary</span><i class="dot live" aria-hidden="true"></i></div>
+          <div class="gate-big" data-gate-big>Open</div>
+          <div class="session-row"><span>Contract slot</span><strong data-sum-ca>pending</strong></div>
+          <div class="session-row"><span>Page scan</span><strong data-sum-scan>clean</strong></div>
+          <div class="session-row"><span>Hex strings</span><strong>judged, not banned</strong></div>
+          <div class="session-row"><span>Market feed</span><strong>independent</strong></div>
+          <p class="fine" data-gate-note>No contract address is stated, so no string can match it yet.</p>
+        </aside>
+      </div>
+      <details class="mining-details">
+        <summary>How matching works</summary>
+        <p class="miner-disclosure">Shape alone proves nothing. A string that looks like an address is either equal to a stated register value or it is unverified. When the contract record flips to stated, the slot at the top fills in and this console starts recognising it.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="wrap" id="method">
+    <div class="section-head">
+      <div><div class="section-kicker">03 / Method</div><h2 data-reveal>Three habits.<br>Zero guesses.</h2></div>
+      <p class="section-intro" data-reveal>The page follows a short routine so that nothing unproven ever reaches the screen as fact.</p>
+    </div>
+    <div class="steps">
+      <article class="step spot" data-reveal><div class="step-num">01</div><h3>Read the register</h3><p>Each outside fact sits in one record with a state: stated, absent or unconfirmed. Only a stated record is allowed to show a value or a link.</p></article>
+      <article class="step spot" data-reveal><div class="step-num">02</div><h3>Match, never assume</h3><p>Anything shaped like an address is compared with stated values. A look-alike with no match is flagged as unverified, whatever its prefix.</p></article>
+      <article class="step spot" data-reveal><div class="step-num">03</div><h3>Follow the tape</h3><p>Market rows come straight from a public DEX feed and keep their own rhythm, separate from the contract slot and from every other record.</p></article>
+    </div>
+  </section>
+
+  <section class="wrap" id="register" aria-labelledby="registerTitle">
+    <div class="section-head">
+      <div><div class="section-kicker">Register / Standing records</div><h2 id="registerTitle" data-reveal>What is known,<br>and what waits.</h2></div>
+      <p class="section-intro" data-reveal>Every record below is read at load. Waiting items show a label and the word pending, nothing more.</p>
+    </div>
+    <div class="activity-shell">
+      <div class="activity-toolbar"><div class="activity-connection"><i aria-hidden="true"></i><span>Register loaded</span></div><span data-register-count>—</span></div>
+      <ol class="activity-list" data-register-list aria-label="Register records"></ol>
+    </div>
+  </section>
+
+  <section class="wrap risk-section" aria-label="Notice">
+    <p class="disclaimer" data-reveal>Nothing on this page is advice. Token markets swing hard, names and logos are easy to copy, and a tidy picture proves nothing. Hold any address up against the register above before you act on it.</p>
+    <p class="fine mono-line" data-mint-line>Contract address: pending</p>
+  </section>
+
+  <section class="wrap" id="privacy" aria-labelledby="privacyTitle">
+    <div class="section-head">
+      <div class="section-kicker">Privacy</div>
+      <h2 id="privacyTitle">What this page touches.</h2>
+      <p class="section-intro">No accounts, no cookies, no forms that travel. The sections below spell out the few moving parts.</p>
+    </div>
+    <div class="privacy-copy">
+      <details><summary>Your browser</summary><p>Everything you type into the console stays in the tab. The page keeps no profile of you and writes nothing to storage.</p></details>
+      <details><summary>Market requests</summary><p>Your browser asks a public DEX interface for token data. That provider, and any network between you and it, can see ordinary connection details such as your IP address.</p></details>
+      <details><summary>Clipboard</summary><p>Copy buttons place exactly the address shown beside them on your clipboard, and nothing else.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <a class="brand" href="#top"><img class="brand-logo" src="assets/logo-192.png" width="32" height="32" alt=""><span>NPC</span></a>
+    <a class="footer-privacy" href="#privacy">Privacy</a>
+    <span class="footer-note">Tape runs on its own record.</span>
+  </div>
+</footer>
+<p class="sr-only" data-live role="status" aria-live="polite"></p>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

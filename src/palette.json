@@ -1,0 +1,89 @@
+{
+  "method": "k-means (k=6, seed 1) on opaque pixels of each asset, centre snapped to nearest real pixel; x,y is that pixel",
+  "palette": [
+    {
+      "token": "bg",
+      "hex": "#0c0807",
+      "file": "reference/NPC.jpg.jpeg",
+      "x": 1439,
+      "y": 130
+    },
+    {
+      "token": "panel",
+      "hex": "#14100d",
+      "file": "reference/SAMPUL  NPC JPG.jpg.jpeg",
+      "x": 792,
+      "y": 46
+    },
+    {
+      "token": "shadow",
+      "hex": "#26120b",
+      "file": "reference/NPC.jpg.jpeg",
+      "x": 1501,
+      "y": 209
+    },
+    {
+      "token": "line",
+      "hex": "#482c20",
+      "file": "reference/SAMPUL  NPC JPG.jpg.jpeg",
+      "x": 1280,
+      "y": 197
+    },
+    {
+      "token": "deep",
+      "hex": "#6e2b10",
+      "file": "reference/NPC.jpg.jpeg",
+      "x": 778,
+      "y": 558
+    },
+    {
+      "token": "text",
+      "hex": "#e8e8e6",
+      "file": "reference/NPC.jpg.jpeg",
+      "x": 249,
+      "y": 298
+    },
+    {
+      "token": "muted",
+      "hex": "#999896",
+      "file": "reference/NPC.jpg.jpeg",
+      "x": 727,
+      "y": 298
+    },
+    {
+      "token": "orange",
+      "hex": "#f45a17",
+      "file": "brand/LOGO NPC PNG...png",
+      "x": 1076,
+      "y": 430
+    },
+    {
+      "token": "orange-soft",
+      "hex": "#f2783f",
+      "file": "brand/LOGO NPC PNG...png",
+      "x": 1073,
+      "y": 650
+    },
+    {
+      "token": "ember",
+      "hex": "#e86b31",
+      "file": "reference/NPC.jpg.jpeg",
+      "x": 1278,
+      "y": 428
+    },
+    {
+      "token": "graphite",
+      "hex": "#4f4f4e",
+      "file": "brand/LOGO NPC PNG...png",
+      "x": 1002,
+      "y": 466
+    },
+    {
+      "token": "white",
+      "hex": "#f8f7f7",
+      "file": "brand/LOGO NPC PNG...png",
+      "x": 1082,
+      "y": 558
+    }
+  ]
+}

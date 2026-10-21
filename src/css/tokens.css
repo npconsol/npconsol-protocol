@@ -1,0 +1,24 @@
+/* The only file allowed to hold colour literals. Every value is a real pixel
+   sampled from brand/ or reference/ assets, see palette.json for coordinates. */
+:root {
+  color-scheme: dark;
+  --bg: #0c0807;
+  --panel: #14100d;
+  --shadow: #26120b;
+  --line: #482c20;
+  --deep: #6e2b10;
+  --text: #e8e8e6;
+  --muted: #999896;
+  --orange: #f45a17;
+  --orange-soft: #f2783f;
+  --ember: #e86b31;
+  --graphite: #4f4f4e;
+  --white: #f8f7f7;
+
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --t-fast: .18s;
+  --t-mid: .4s;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "npc",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "NPC on Solana: live tape, strict register, address console.",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs",
+    "serve": "node scripts/serve.mjs"
+  }
+}
